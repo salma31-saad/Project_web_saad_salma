@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-pzjw8f+ua7Kw1TIq0zX3bdylK8Q+o83zdI1REbi6oGpbSzgGVxJINoyrcJv5Vh8j" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+</head>
+<body>
+    <div class="calculator">
+
+        <input type="text" class="display" id="display" disabled>
+
+    
+        <button class="button operator btn btn-outline-secondary" onclick="appendToDisplay('/')">/</button>
+        <button class="button operator btn btn-outline-secondary" onclick="appendToDisplay('+')">+</button>
+        <button class="button operator btn btn-outline-secondary" onclick="appendToDisplay('-')">-</button>
+        <button class="button clear btn btn-danger" onclick="clearDisplay()">C</button>
+
+
+        <button class="button btn btn-outline-secondary" onclick="appendToDisplay('7')">7</button>
+        <button class="button btn btn-outline-secondary" onclick="appendToDisplay('8')">8</button>
+        <button class="button btn btn-outline-secondary" onclick="appendToDisplay('9')">9</button>
+        <button class="button operator btn btn-outline-secondary" onclick="appendToDisplay('%')">%</button>
+
+
+        <button class="button btn btn-outline-secondary" onclick="appendToDisplay('4')">4</button>
+        <button class="button btn btn-outline-secondary" onclick="appendToDisplay('5')">5</button>
+        <button class="button btn btn-outline-secondary" onclick="appendToDisplay('6')">6</button>
+        <button class="button operator btn btn-outline-secondary" onclick="appendToDisplay('*')">*</button>
+
+  
+        <button class="button btn btn-outline-secondary" onclick="appendToDisplay('1')">1</button>
+        <button class="button btn btn-outline-secondary" onclick="appendToDisplay('2')">2</button>
+        <button class="button btn btn-outline-secondary" onclick="appendToDisplay('3')">3</button>
+        <button class="button operator btn btn-outline-secondary" onclick="appendToDisplay('.')">.</button>
+
+   
+        <button class="button btn btn-outline-secondary" onclick="appendToDisplay('0')">0</button>
+        <button class="button btn btn-outline-secondary" onclick="appendToDisplay('(')">(</button>
+        <button class="button btn btn-outline-secondary" onclick="appendToDisplay(')')">)</button>
+        <button class="button equal btn btn-success" onclick="calculate()">=</button>
+
+        <textarea class="history-box form-control" id="historyBox" readonly></textarea>
+        <button class="clear-history btn btn-warning" onclick="clearHistory()">Effacer l'historique</button>
+    </div>
+
+    <script src="style.js"></script>
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zyiH16p5r+n7B5yO9oI71l4P3E8tk0Yh6k+KJjDE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0zX3bdylK8Q+o83zdI1REbi6oGpbSzgGVxJINoyrcJv5Vh8j" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0zX3bdylK8Q+o83zdI1REbi6oGpbSzgGVxJINoyrcJv5Vh8j" crossorigin="anonymous"></script>
+</body>
+</html>
